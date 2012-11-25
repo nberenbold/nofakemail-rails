@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["nils.berenbold@gmail.com"]
   gem.description   = "a Gem which checks if an E-Mail-Address is a Trash-Mail"
   gem.summary       = ""
-  gem.homepage      = ""
+  gem.homepage      = "http://nofakemail.net/"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
