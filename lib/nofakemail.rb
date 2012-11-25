@@ -17,7 +17,13 @@ module Nofakemail
       body = open("http://nofakemail.net/webservice/isTrashmail/json?#{email_array.join("&")}").read rescue ""
       json_body = ActiveSupport::JSON.decode body
       
-      json_body["emails"]
+      emails = {}
+      
+      json_body["emails"].each_pair do |email,key|
+        emails[email] = !key
+      end
+      
+      emails
     end
   end
 end
