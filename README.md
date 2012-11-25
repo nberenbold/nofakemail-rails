@@ -1,6 +1,6 @@
 # Nofakemail
 
-TODO: Write a gem description
+Nofakemail a simple gem to check if a given E-Mail-Address is linked to a Trash-Mail Provider
 
 ## Installation
 
@@ -18,12 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Simple use anywhere in your Application
 
-## Contributing
+ Nofakemail.check_email "test@trash-mail.com"
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+or to check several E-Mail-Addresses
+
+ Nofakemail.check_emails ["as@trash-mail.com", "qw@trash-mail.com", "asd@googlemail.com"]
