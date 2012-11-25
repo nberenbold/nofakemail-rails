@@ -20,8 +20,10 @@ Or install it yourself as:
 
 Simple use anywhere in your Application
 
- Nofakemail.check_email "test@trash-mail.com"
+    Nofakemail.check_email "test@trash-mail.com"
+    #=> true
 
 or to check several E-Mail-Addresses
 
- Nofakemail.check_emails ["as@trash-mail.com", "qw@trash-mail.com", "asd@googlemail.com"]
+    Nofakemail.check_emails ["as@trash-mail.com", "qw@trash-mail.com", "asd@googlemail.com"]
+    #=> {"as@trash-mail.com"=>true, "qw@trash-mail.com"=>true, "asd@googlemail.com"=>false}
